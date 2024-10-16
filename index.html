@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <style>
+        div {
+            margin: 20px;
+        }
+        .locked {
+            pointer-events: none;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Quiz Application</h1>
+
+<div>
+    <label>Which of the following is a valid way to declare a variable in JavaScript?</label>
+    <div>
+        <input type="checkbox" id="var" name="question1" value="var myVariable" onchange="displayAnswer(this, 'answer1')" />
+        <label for="var">var myVariable</label>
+    </div>
+    <div>
+        <input type="checkbox" id="let" name="question1" value="let myVariable" onchange="displayAnswer(this, 'answer1')" />
+        <label for="let">let myVariable</label>
+    </div>
+    <div>
+        <input type="checkbox" id="const" name="question1" value="const myVariable" onchange="displayAnswer(this, 'answer1')" />
+        <label for="const">const myVariable</label>
+    </div>
+    <div>
+        <input type="checkbox" id="all" name="question1" value="All of the above" onchange="displayAnswer(this, 'answer1')" />
+        <label for="all">All of the above</label>
+    </div>
+    <small id="answer1"></small>
+</div>
+
+<div>
+    <label>What is the correct syntax for referring to an external script called `app.js`?</label>
+    <div>
+        <input type="checkbox" id="src" name="question2" value="script src='app.js'" onchange="displayAnswer(this, 'answer2')" />
+        <label for="src">script src="app.js"</label>
+    </div>
+    <div>
+        <input type="checkbox" id="link" name="question2" value="script link='app.js'" onchange="displayAnswer(this, 'answer2')" />
+        <label for="link">script link="app.js"</label>
+    </div>
+    <div>
+        <input type="checkbox" id="href" name="question2" value="script href='app.js'" onchange="displayAnswer(this, 'answer2')" />
+        <label for="href">script href="app.js"</label>
+    </div>
+    <div>
+        <input type="checkbox" id="url" name="question2" value="script url='app.js'" onchange="displayAnswer(this, 'answer2')" />
+        <label for="url">script url="app.js"</label>
+    </div>
+    <small id="answer2"></small>
+</div>
+
+<div>
+    <label>Which built-in method combines the text of two strings and returns a new string?</label>
+    <div>
+        <input type="checkbox" id="append" name="question3" value="append()" onchange="displayAnswer(this, 'answer3')" />
+        <label for="append">append()</label>
+    </div>
+    <div>
+        <input type="checkbox" id="concat" name="question3" value="concat()" onchange="displayAnswer(this, 'answer3')" />
+        <label for="concat">concat()</label>
+    </div>
+    <div>
+        <input type="checkbox" id="sattach" name="question3" value="sattach()" onchange="displayAnswer(this, 'answer3')" />
+        <label for="sattach">sattach()</label>
+    </div>
+    <div>
+        <input type="checkbox" id="combine" name="question3" value="combine()" onchange="displayAnswer(this, 'answer3')" />
+        <label for="combine">combine()</label>
+    </div>
+    <small id="answer3"></small>
+</div>
+
+<div>
+    <label>How can you add a comment in JavaScript?</label>
+    <div>
+        <input type="checkbox" id="htmlComment" name="question4" value="!-- This is a comment --" onchange="displayAnswer(this, 'answer4')" />
+        <label for="htmlComment">!-- This is a comment --</label>
+    </div>
+    <div>
+        <input type="checkbox" id="jsComment" name="question4" value="// This is a comment" onchange="displayAnswer(this, 'answer4')" />
+        <label for="jsComment">// This is a comment</label>
+    </div>
+    <div>
+        <input type="checkbox" id="hashComment" name="question4" value="# This is a comment" onchange="displayAnswer(this, 'answer4')" />
+        <label for="hashComment"># This is a comment</label>
+    </div>
+    <div>
+        <input type="checkbox" id="blockComment" name="question4" value="/* This is a comment */" onchange="displayAnswer(this, 'answer4')" />
+        <label for="blockComment">/* This is a comment */</label>
+    </div>
+    <small id="answer4"></small>
+</div>
+
+<div>
+    <label>What is the output of the following JavaScript code?</label>
+    <div>
+        <input type="checkbox" id="ten" name="question5" value="10" onchange="displayAnswer(this, 'answer5')" />
+        <label for="ten">10</label>
+    </div>
+    <div>
+        <input type="checkbox" id="thirtySeven" name="question5" value="37" onchange="displayAnswer(this, 'answer5')" />
+        <label for="thirtySeven">37</label>
+    </div>
+    <div>
+        <input type="checkbox" id="nan" name="question5" value="NaN" onchange="displayAnswer(this, 'answer5')" />
+        <label for="nan">NaN</label>
+    </div>
+    <div>
+        <input type="checkbox" id="error" name="question5" value="Error" onchange="displayAnswer(this, 'answer5')" />
+        <label for="error">Error</label>
+    </div>
+    <small id="answer5"></small>
+</div>
+
+<div>
+    <label>How do you declare a function in JavaScript?</label>
+    <div>
+        <input type="checkbox" id="defFunc" name="question6" value="def myFunction()" onchange="displayAnswer(this, 'answer6')" />
+        <label for="defFunc">def myFunction()</label>
+    </div>
+    <div>
+        <input type="checkbox" id="function" name="question6" value="function myFunction()" onchange="displayAnswer(this, 'answer6')" />
+        <label for="function">function myFunction()</label>
+    </div>
+    <div>
+        <input type="checkbox" id="func" name="question6" value="func myFunction()" onchange="displayAnswer(this, 'answer6')" />
+        <label for="func">func myFunction()</label>
+    </div>
+    <div>
+        <input type="checkbox" id="declareFunc" name="question6" value="declare function myFunction()" onchange="displayAnswer(this, 'answer6')" />
+        <label for="declareFunc">declare function myFunction()</label>
+    </div>
+    <small id="answer6"></small>
+</div>
+
+<div>
+    <label>Which operator is used to assign a value to a variable in JavaScript?</label>
+    <div>
+        <input type="checkbox" id="equals" name="question7" value="=" onchange="displayAnswer(this, 'answer7')" />
+        <label for="equals">=</label>
+    </div>
+    <div>
+        <input type="checkbox" id="doubleEquals" name="question7" value="==" onchange="displayAnswer(this, 'answer7')" />
+        <label for="doubleEquals">==</label>
+    </div>
+    <div>
+        <input type="checkbox" id="tripleEquals" name="question7" value="===" onchange="displayAnswer(this, 'answer7')" />
+        <label for="tripleEquals">===</label>
+    </div>
+    <div>
+        <input type="checkbox" id="notEquals" name="question7" value="!=" onchange="displayAnswer(this, 'answer7')" />
+        <label for="notEquals">!=</label>
+    </div>
+    <small id="answer7"></small>
+</div>
+
+<div>
+    <label>What will the following code output?</label>
+    <div>
+        <input type="checkbox" id="largerA" name="question8" value="a is larger" onchange="displayAnswer(this, 'answer8')" />
+        <label for="largerA">a is larger</label>
+    </div>
+    <div>
+        <input type="checkbox" id="largerB" name="question8" value="b is larger" onchange="displayAnswer(this, 'answer8')" />
+        <label for="largerB">b is larger</label>
+    </div>
+    <div>
+        <input type="checkbox" id="five" name="question8" value="5" onchange="displayAnswer(this, 'answer8')" />
+        <label for="five">5</label>
+    </div>
+    <div>
+        <input type="checkbox" id="ten" name="question8" value="10" onchange="displayAnswer(this, 'answer8')" />
+        <label for="ten">10</label>
+    </div>
+    <small id="answer8"></small>
+</div>
+
+<div>
+    <label>Which of the following is not a primitive data type in JavaScript?</label>
+    <div>
+        <input type="checkbox" id="string" name="question9" value="String" onchange="displayAnswer(this, 'answer9')" />
+        <label for="string">String</label>
+    </div>
+    <div>
+        <input type="checkbox" id="number" name="question9" value="Number" onchange="displayAnswer(this, 'answer9')" />
+        <label for="number">Number</label>
+    </div>
+    <div>
+        <input type="checkbox" id="boolean" name="question9" value="Boolean" onchange="displayAnswer(this, 'answer9')" />
+        <label for="boolean">Boolean</label>
+    </div>
+    <div>
+        <input type="checkbox" id="object" name="question9" value="Object" onchange="displayAnswer(this, 'answer9')" />
+        <label for="object">Object</label>
+    </div>
+    <small id="answer9"></small>
+</div>
+
+<div>
+    <label>What will the following code return?</label>
+    <pre><code>typeof(null)</code></pre>
+    <div>
+        <input type="checkbox" id="null" name="question10" value="null" onchange="displayAnswer(this, 'answer10')" />
+        <label for="null">null</label>
+    </div>
+    <div>
+        <input type="checkbox" id="undefined" name="question10" value="undefined" onchange="displayAnswer(this, 'answer10')" />
+        <label for="undefined">undefined</label>
+    </div>
+    <div>
+        <input type="checkbox" id="object" name="question10" value="object" onchange="displayAnswer(this, 'answer10')" />
+        <label for="object">object</label>
+    </div>
+    <div>
+        <input type="checkbox" id="boolean" name="question10" value="boolean" onchange="displayAnswer(this, 'answer10')" />
+        <label for="boolean">boolean</label>
+    </div>
+    <small id="answer10"></small>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
